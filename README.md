@@ -4,23 +4,23 @@ A Faster implementation of uuid for react native with c++ turbo modules
 
 ## Installation
 
-
 ```sh
 npm install react-native-fast-uuid
 ```
 
+##Note
+Currently it does not support with expo.
 
 ## Usage
 
-
 ```js
-import { multiply } from 'react-native-fast-uuid';
+import fastUuid from 'react-native-fast-uuid';
 
 // ...
 
-const result = multiply(3, 7);
+const uuidV4 = fastUuid.generateV4();
+const uuidV7 = fastUuid.generateV7();
 ```
-
 
 ## Contributing
 
