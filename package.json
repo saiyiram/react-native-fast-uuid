@@ -1,13 +1,13 @@
 {
   "name": "react-native-fast-uuid",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Faster implementation of uuid for react native with c++ turbo modules",
   "main": "./lib/module/index.js",
-  "types": "./lib/typescript/src/index.d.ts",
+  "types": "./lib/typescript/index.d.ts",
   "exports": {
     ".": {
       "source": "./src/index.tsx",
-      "types": "./lib/typescript/src/index.d.ts",
+      "types": "./lib/typescript/index.d.ts",
       "default": "./lib/module/index.js"
     },
     "./package.json": "./package.json"
@@ -38,6 +38,7 @@
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build lib",
     "prepare": "bob build",
+    "build": "bob build",
     "release": "release-it --only-version"
   },
   "keywords": [

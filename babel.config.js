@@ -1,12 +1,12 @@
 module.exports = {
-  overrides: [
-    {
-      exclude: /\/node_modules\//,
-      presets: ['module:react-native-builder-bob/babel-preset'],
-    },
-    {
-      include: /\/node_modules\//,
-      presets: ['module:@react-native/babel-preset'],
-    },
-  ],
+  presets: ['module:metro-react-native-babel-preset'],
+  plugins: [
+    [
+      'module-resolver',
+      {
+        root: ['./src'],
+        extensions: ['.ts', '.tsx', '.js', '.json']
+      }
+    ]
+  ]
 };
